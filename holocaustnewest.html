@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Playwrite+IN+Guides&display=swap" rel="stylesheet"> 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Momo+Signature&family=Playwrite+IN+Guides&display=swap" rel="stylesheet"></head><style>
+
+.Lens {
+  position: fixed;       
+  top: 0;
+  left: 0;
+  width: 100%;           
+  height: 100%;         
+  object-fit: cover;    
+  z-index: -1;          
+  pointer-events: none; 
+}
+p {
+font-family: Georgia, 'Times New Roman', Times, serif;
+font-size: 30px;
+color: rgb(255, 255, 255);
+margin-top: 0;
+margin-bottom: 10px;
+line-height: 1.6;
+letter-spacing: 1px;
+  display: flex;
+  justify-content: center; 
+  align-items: center;   
+  text-align: center;
+   padding: 40px;
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+   
+  /* text-shadow: 2px 2px 2px rgb(255, 255, 255); */
+   
+}
+.p1 {
+font-family: 'Merriweather', serif;
+font-size: 30px;
+color: rgb(255, 255, 255);
+margin-top: 0;
+margin-bottom: 10px;
+line-height: 1.6;
+letter-spacing: 1px;
+  display: flex;
+  justify-content: center; 
+  align-items: center;   
+  text-align: center;
+   padding: 40px;
+ font-weight: bold;
+ text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+   
+  /* text-shadow: 2px 2px 2px rgb(255, 255, 255); */
+   
+}
+.p2 {
+font-family: 'Momo Signature', cursive;
+font-size: 40px;
+color: rgb(255, 255, 255);
+margin-top: 0;
+margin-bottom: 10px;
+line-height: 1.6;
+letter-spacing: 0px;
+  display: flex;
+  justify-content: center; 
+  align-items: center;   
+  text-align: center;
+   padding: 40px;
+
+   text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.7);
+   
+}
+.p3 {
+font-family: 'Merriweather', serif;
+font-size: 30px;
+color: rgb(255, 255, 255);
+margin-top: 0;
+margin-bottom: 10px;
+line-height: 1.6;
+letter-spacing: 1px;
+  display: flex;
+  justify-content: center; 
+  align-items: center;   
+  text-align: center;
+   padding: 0px;
+ font-weight: bold; 
+  text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+   
+  /* text-shadow: 2px 2px 2px rgb(255, 255, 255); */
+   
+}
+.p4 {
+font-family: 'Merriweather', serif;
+font-size: 70px;
+color: rgb(255, 255, 255);
+margin-top: 0;
+margin-bottom: 10px;
+line-height: 1.6;
+letter-spacing: 1px;
+  display: flex;
+  justify-content: center; 
+  align-items: center;   
+  text-align: center;
+   padding: 0px;
+text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+   
+  /* text-shadow: 2px 2px 2px rgb(255, 255, 255); */
+   
+}
+
+h1 {
+    font-family: 'Merriweather', serif;
+    font-size: 150px;
+    margin-bottom: 10px;
+    color: rgb(255, 255, 255);
+    min-height: 5vh;
+    letter-spacing: 2px;
+text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+   
+  }
+ h2 {
+      font-family: 'Merriweather', serif;
+    font-size: 70px;
+    margin-bottom: 10px;
+    color: rgb(255, 255, 255);
+    min-height: 5vh;
+    /* text-shadow: 2px 2px 6px rgb(255, 255, 255); */
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+   
+ }
+ h3{
+font-family: 'Merriweather', serif;
+    font-size: 40px;
+    margin-bottom: 10px;
+    color: rgb(255, 255, 255);
+    min-height: 5vh;
+ text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+   
+  }
+
+
+
+body {
+    background-color: rgb(0, 0, 0);
+    margin: 0; 
+    background-size: cover; 
+    background-position: center center; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed;
+    height: 100vh; 
+     /* background-image: url("clouds.png"); */
+
+  
+}
+ .shape {
+    width: 100vw; 
+      height: 100vh;
+      background-color: #222222c0; 
+      clip-path: polygon(100% 79%, 100% 100%, 75% 100%, 0% 100%, 0 78%, 50% 52%);
+       top: 0;
+      left: 0;
+       position: fixed;
+        z-index: -1;
+        opacity: 0.5 ;
+ }
+.auto { 
+        
+  width: 40%;           
+  height: auto;         
+  display: block;       
+  object-fit: cover; 
+  margin: 20px auto; 
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+.auto2 { 
+        
+    
+  display: block;       
+  object-fit: cover; 
+  margin: 20px auto; 
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+width: 480px;
+height: 640px;
+}
+.auto3 { 
+        
+  width: 60%;           
+  height: auto;         
+  display: block;       
+  object-fit: cover; 
+  margin: 20px auto; 
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.container {
+  position: relative;
+}
+
+.paper {
+  width: 50%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  margin: 20px auto;
+  position: relative;
+  z-index: 1;
+}
+
+
+.drawing {
+  width: 13%;
+  position: absolute;
+  top: 50%;       
+  left: 40%;     
+  transform: translate(-50%, -50%); 
+  z-index: 2;    
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+.poster {
+
+
+  width: 13%;
+  position: absolute;
+  top: 50%;       
+  left: 60%;     
+  transform: translate(-50%, -50%); 
+  z-index: 2;    
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+
+}
+
+.sidetext { 
+font-family: Georgia, 'Times New Roman', Times, serif;
+font-size: 20px;
+    padding: 40px; 
+    border: 5px dotted rgb(86, 86, 86); 
+    background-color: rgba(12, 12, 12, 0.2);
+    border-radius: 100px;
+    margin: 60px; 
+font-weight: normal;
+text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+color: rgb(255, 255, 255);
+   letter-spacing: 2px;
+  }
+  .h7 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+font-size: 20px;
+    padding: 40px; 
+    border: groove 5px rgb(255, 8, 8); 
+    background-color: rgba(184, 4, 4, 0.2);
+    border-radius: 100px;
+    margin: 60px; 
+    font-weight: bold;
+font-weight: normal;
+  text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+   color: rgb(255, 255, 255);
+   letter-spacing: 2px;
+}
+
+
+.top-fade-img {
+    position: fixed;   
+    top: 0;
+    left: 0;
+    width: 100%;       
+    height: 75vh;     
+    
+   
+    object-fit: cover; 
+    
+    
+    object-position: center 35%; 
+    
+   
+    z-index: -2;
+    
+    pointer-events: none; 
+
+  
+    -webkit-mask-image: linear-gradient(to bottom, rgb(255, 255, 255) 60%, transparent 100%);
+    mask-image: linear-gradient(to bottom, rgb(255, 255, 255) 60%, transparent 100%);
+}
+
+#disclaimer-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9); 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10000; 
+  transition: opacity 0.5s ease;
+}
+
+#disclaimer-card {
+  background-color: #111;
+  border: 2px solid #444;
+  border-radius: 4px;
+  max-width: 800px; /* Adjusted to fit the larger 30px font comfortably */
+}
+
+.disclaimer-title {
+  color: #ff0000; /* Red as requested */
+  font-family: 'Merriweather', serif;
+  font-size: 70px; 
+  margin-bottom: 15px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.disclaimer-text {
+  /* YOUR EXACT STYLES BELOW */
+  font-family: 'Merriweather', serif;
+  font-size: 30px;
+  color: rgb(255, 255, 255);
+  margin-top: 0;
+  margin-bottom: 10px;
+  line-height: 1.6;
+  letter-spacing: 1px;
+  display: flex;
+  justify-content: center; 
+  align-items: center;   
+  text-align: center;
+  padding: 40px;
+  
+  /* Shadow removed per request */
+}
+
+#close-disclaimer {
+  margin-bottom: 30px;
+  background-color: #333;
+  color: white;
+  border: 1px solid #555;
+  padding: 15px 35px;
+  cursor: pointer;
+  font-size: 18px;
+  font-family: Arial, sans-serif;
+  transition: 0.3s;
+}
+
+#close-disclaimer:hover {
+  background-color: white;
+  color: black;
+}
+
+.overlay-hidden {
+  visibility: hidden;
+  opacity: 0;
+}
+</style></head>
+<body>
+<title>Judaismagic</title>
+<div class="shape"></div>
+<center>
+<img src="liberation.jpg" class="top-fade-img" alt="Liberation background">
+  <h1> Holocaust</h1>
+
+<img src="AddLensFlaredotcom Artwork.png" alt="Lens" class="Lens">
+
+<div id="disclaimer-overlay" class="overlay-hidden">
+  <div id="disclaimer-card">
+    <h1 class="disclaimer-title">DISCLAIMER</h1>
+    <p class="disclaimer-text">
+      THE FOLLOWING WEB-PAGE CONTAINS VIOLENT DESCRIPTIONS, NUDITY AND GRAPHIC IMAGES THAT MAY BE DISTURBING TO READERS. <br><br> 
+      READER DISCRETION IS ADVISED.
+    </p>
+    <button id="close-disclaimer">I Understand</button>
+  </div>
+</div>
+<p>The Holocaust was the state-sponsored persecution and genocide of approximately six million European Jews, occurring between 1933 and 1945. It was perpetrated by the Nazi regime, led by Adolf Hitler. The Nazis and their collaborators murdered Jewish people of all backgrounds and ages, fueled by deep-seated antisemitic ideologies that falsely portrayed the Jewish community as a threat to German society.
+   After World War I, some in Germany struggled to accept their nation's defeat. Seeking a scapegoat, they targeted the Jewish population, building upon centuries of existing European prejudice. Propaganda claimed that Jewish citizens had betrayed the army, a falsehood designed to channel political anger toward an innocent minority. </p>
+       <img src="myth.png"  class="auto">
+       <h4 class="sidetext"> "The Stab in the Back" myth: A piece of Nazi propaganda.</h4>
+       <h2>Marking The Jews</h2>
+       <p>In antisemitic propaganda, such as caricatures, Jewish people were depicted using monstrous imagery. Artists used exaggerated facial expressions and heavy shadows to create an appearance that was intentionally frightening and nightmarish. (Historically, the term "Semitic" refers to a large family of languages originating in the Middle East, including Hebrew and Arabic; however, the Nazis used the term "antisemitism" to give their racial hatred a false scientific justification.)</p>
+     <div class="container">
+  <img src="paper.png" class="paper" alt="paper">
+  <img src="image propaganda.jpg" class="drawing" alt="drawing">
+  <img src="image 2.jpg" class="poster" >
+</div>
+<h3 class="sidetext">On the left: a poster for the propaganda film "The Eternal Jew." <br>
+On the right: imagery associated with the Nazi party, depicting the persecution of Jewish people as a "victory" for their cause. </h3>
+<p> As the war escalated, Jewish people in Nazi-occupied territories were forced to wear a yellow, Star of David-shaped badge on their clothing. These badges, which often featured the word "Jude," were used to segregate and humiliate the population. Across most of occupied Europe, these badges were mandatory for all Jewish citizens, marking them for further persecution.</p>
+<img src="jewish badge.jpg" class="auto" >
+<h5 class="sidetext">Jewish women wearing the "Yellow Badge" in Austria.</h5>
+<p>Beginning in 1939, Jewish people were forcibly removed from their homes and relocated to Ghettos—restricted urban areas designed to isolate them. These areas were severely overcrowded and lacked basic infrastructure. Starvation and disease were rampant due to the intentional withholding of food and medicine. While some countries, such as Denmark, managed to save the vast majority of their Jewish citizens through heroic rescue efforts, most Ghetto residents faced a grim fate. In the Warsaw Ghetto, for example, 22% of the 380,000 imprisoned people died within a single year before deportations to death camps even began. </p>
+<img src="Sitting.jpg" class="auto">
+<h6 class="sidetext">A Jewish mother and her children facing starvation on the streets of the Warsaw Ghetto. </h6>
+<p class="h7">Disclaimer: Many photographs of the Ghettos were taken by Nazi photographers for propaganda purposes. These images were often staged to either humiliate the victims or falsely portray them as content in order to hide the reality of Nazi crimes. The true conditions in the Ghettos were horrific and life-threatening.
+</p>
+<h2> The Death Camps: "The Final Solution" </h2>
+  <p> The "Final Solution" was the Nazi code name for the systematic, industrialized mass murder of the Jewish people. Victims were deported from Ghettos to specialized death camps designed for high-efficiency killing. <br>
+
+Many victims were initially unaware of their fate, having been told they were being "resettled" for work. They arrived on overcrowded freight trains, often referred to as "Transports to Extinction." Upon arrival, they were stripped of all personal belongings—suitcases, shoes, and even toothbrushes were confiscated—as they realized the terrifying reality of their situation.</p>
+    <img src="shoes.jpg" class="auto">
+    <h5 class="sidetext">The Majdanek Death Camp in Poland: A pile of shoes taken from victims before they were murdered.</h5>
+<p>
+    There were six primary death camps, all located in occupied Poland: Chełmno, Bełżec, Sobibór, Treblinka, Majdanek, and Auschwitz-Birkenau. Chełmno began operations on December 8, 1941, utilizing mobile "Gas Vans" where victims were suffocated by carbon monoxide exhaust. In Bełżec, Sobibór, Treblinka, and Majdanek, the Nazis built stationary gas chambers where carbon monoxide was piped into sealed rooms to murder large groups of people simultaneously.
+    <br>
+</p>
+
+<h2>Auschwitz</h2>
+<p>
+    Auschwitz was the largest camp complex, consisting of three main areas:<br>
+    Auschwitz I: The administrative center and original concentration camp. 
+<br>
+Auschwitz II (Birkenau): The primary site of industrialized mass murder.
+<br> Auschwitz III (Monowitz): A forced-labor camp where prisoners were worked to death for the industrial production of chemicals.
+Beyond these, there were dozens of sub-camps where prisoners endured brutal labor. <br><br> 
+In the gas chambers of Birkenau, the Nazis used Zyklon B—a highly lethal, cyanide-based pesticide. This method allowed for mass murder on an unprecedented scale. Auschwitz was also the only camp where prisoners were systematically tattooed with identification numbers on their arms as a way to strip them of their humanity.  </p> 
+<img src="gascans.jpg" class="auto">
+<p class="sidetext">Canisters that contained Zyklon B.</p>
+<img src="WhatsApp Image 2026-01-28 at 16.45.22.jpeg" class="auto">
+<p>The following are photographs of Jewish children imprisoned in Auschwitz. They include Mamet Merenstein (prisoner 62473), Michalina Petrenko (prisoner 27018), Miroslav Kubik (who survived, prisoner 67065), Czesława Kwoka (1928–1943, prisoner 26947), and Krystyna Trzesniewska (1929–1943, prisoner 27129). <br><br>
+  These photos were taken by Wilhelm Brasse, a Polish prisoner forced to work as a camp photographer between 1941 and 1943. Brasse was ordered to document the victims, including those selected for the experiments of Dr. Josef Mengele. After the war, the photographer was so haunted by the images of the children he photographed that he could never return to his profession as a photographer. </p>        
+<p class="p2">"Those Jewish boys and those naked <br> Jewish girls kept passing before my eyes." </p>
+<p>Brasse has retired from photography since.</p>
+<p>At the Auschwitz selection ramp, Dr. Josef Mengele—known as the "Angel of Death"—would decide the fate of arriving Jews. With a simple gesture, he sent most to immediate death in the gas chambers and others to forced labor. Mengele also selected specific individuals for cruel pseudo-medical experiments, violating every ethical principle of medicine. </p>
+<img src="selection.png" class="auto">
+<p class="sidetext">The selection ramp at Auschwitz-Birkenau.</p>
+<div style="position: relative; width: 960px; margin: 0 auto; box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);">
+  <video id="scrollVideo" width="960" height="540" muted playsinline style="display: block;">
+    <source src="webvidd.mp4" type="video/mp4">
+  </video>
+  <button id="unmuteBtn" style="position: absolute; top: 20px; right: 20px; z-index: 10; padding: 10px 20px; font-size: 16px; cursor: pointer;">
+    🔊 Turn Sound On
+  </button>
+</div>
+<p class="sidetext">Israeli singer Noa Kirel visits Auschwitz, where members of her family were murdered. The video discusses the cold bureaucracy of the selection process.</p>
+<p> Mengele focused his "research" on twins and people with physical abnormalities, including both adults and children. </p>
+<img src="IMG_5243.PNG" class="auto"> 
+<p class="sidetext">In the center: Moti and Yoel Alon, survivors of Mengele's twin experiments.</p>
+<p>Mengele’s experiments were based on the false Nazi ideology of racial purity. He performed horrific surgeries and fatal tests on twins in specially designated barracks. Witnesses, such as prisoner-doctor Gisella Perl, recalled his terrifying lack of empathy as he performed these atrocities. His goals were as scientifically baseless as they were cruel: to find "defects" in those he deemed inferior and to discover a way to increase the birth rate of the "Aryan" population. </p>
+<img src="B1MSXy8Gbg_0_0_1920_1080_0_medium.png" class="auto">
+<p class="sidetext">Josef Mengele.</p>
+<p class="p3">The Nazi doctor aimed for two primary goals in his research:</p>
+<p>1. To study twins and individuals with physical differences, whom he viewed as genetic "errors." <br><br>
+2. To unlock the secrets of multiple births to accelerate the expansion of the Third Reich.</p>
+<h2>The Twin Experiments</h2>
+<p>Mengele was obsessed with twins. In one common experiment, he would infect one twin with a disease like typhus and then transfuse their blood into the healthy twin to observe the results. Many died during these procedures; those who survived were often murdered afterward so their bodies could be dissected. He also performed unnecessary amputations and other surgical tortures. Miklós Nyiszli, a prisoner-doctor at Auschwitz, testified that Mengele once murdered 14 twins in a single night through lethal injections. </p>
+<p class ="sidetext">Chloroform, once used as an anesthetic, was often used as a tool for murder in these experiments.</p>
+<img src="kids.jpg" class="auto2">
+<p class="sidetext">Auschwitz-Birkenau: Child prisoners photographed as part of a camp investigation.</p>
+<p class="p2">“I delivered a beautiful blonde girl, but Mengele ordered that my breasts be bound so that he could see how long a newborn could survive without food.” </p> 
+<p class="p3"> — Ruth Elias, survivor of Auschwitz-Birkenau.</p>
+<p>After watching her child suffer for days, a Czech prisoner-doctor provided Elias with a syringe of morphine to end the infant's agony and spare it from further torture.</p>
+
+
+
+<h1>27.1.1945</h1>
+<p>On January 27, 1945, the Soviet Red Army liberated Auschwitz. <br> 
+As the Soviet forces approached, the Nazis attempted to destroy the evidence of their crimes. Under the orders of Heinrich Himmler, the gas chambers and crematoria at Birkenau were bombed. However, the sheer scale of the camp meant the Nazis could not destroy everything before the liberators arrived. </p>
+<h3>The Liberating Soldiers documented the horrors they found: <br><br> </h3>
+<img src="corpses.jpg" class="auto">
+<p class="sidetext">Piles of victims discovered by liberating forces in February 1945.</p>
+<img src="bodies.jpg" class="auto"> 
+<p class="sidetext">Prisoners who succumbed to exhaustion and cold shortly before liberation.</p>
+<img src="hair.jpg" class="auto"> 
+<p class="sidetext">Massive quantities of hair shorn from victims. This hair was intended for industrial use, such as textiles and rope-making.</p>
+<img src="ruins.jpg" class="auto"> 
+<p class="sidetext">The ruins of the Birkenau gas chambers, destroyed by the Nazis to hide their crimes.</p>
+<img src="children.jpg" class="auto"> 
+<p class="sidetext">Child survivors of Auschwitz displaying the identification numbers tattooed on their arms.</p>
+<img src="freedom.jpg" class="auto3"> 
+<p class="sidetext">Survivors leaving the camp in February 1945. <br>
+  Behind them is the gate featuring the deceptive Nazi slogan "Arbeit macht frei" (Work sets you free).</p>
+
+
+<br>
+</center>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    var video = document.getElementById("scrollVideo");
+    var btn = document.getElementById("unmuteBtn");
+
+    // 1. The Scroll Logic (Plays muted automatically)
+    var observer = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          // It forces play (browser allows this because it's muted)
+          var playPromise = video.play();
+          if (playPromise !== undefined) {
+            playPromise.catch(error => {
+              // Auto-play was prevented
+              console.log("Autoplay prevented");
+            });
+          }
+        } else {
+          video.pause();
+        }
+      });
+    }, { threshold: 0.5 });
+    
+    observer.observe(video);
+
+    // 2. The Unmute Logic
+    btn.addEventListener("click", function() {
+      video.muted = false; // Turn on sound
+      video.currentTime = 0; // Optional: Restart video from beginning
+      btn.style.display = "none"; // Hide the button after clicking
+    });
+  });
+
+  window.addEventListener('load', function() {
+    setTimeout(function() {
+      const overlay = document.getElementById('disclaimer-overlay');
+      overlay.classList.remove('overlay-hidden');
+    }, 1000);
+  });
+
+  document.getElementById('close-disclaimer').addEventListener('click', function() {
+    document.getElementById('disclaimer-overlay').style.display = 'none';
+  });
+
+</script>
+</body>
+
+</html>
