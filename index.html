@@ -153,6 +153,11 @@ body {
     background-attachment: fixed;
     height: 100vh; 
      /* background-image: url("clouds.png"); */
+ -webkit-user-select: none; 
+    -moz-user-select: none;    
+    -ms-user-select: none;     
+    user-select: none;        
+} 
 
   
 }
@@ -437,13 +442,12 @@ In the gas chambers of Birkenau, the Nazis used Zyklon B—a highly lethal, cyan
 <p>At the Auschwitz selection ramp, Dr. Josef Mengele—known as the "Angel of Death"—would decide the fate of arriving Jews. With a simple gesture, he sent most to immediate death in the gas chambers and others to forced labor. Mengele also selected specific individuals for cruel pseudo-medical experiments, violating every ethical principle of medicine. </p>
 <img src="selection.png" class="auto">
 <p class="sidetext">The selection ramp at Auschwitz-Birkenau.</p>
-<div style="position: relative; width: 100%; max-width: 960px; margin: 0 auto; aspect-ratio: 16 / 9; box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);">
+<div style="position: relative; width: 100%; max-width: 960px; margin: 0 auto; box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);">
   
- <video id="scrollVideo" muted playsinline controls style="width: 100%; height: 100%; object-fit: contain; display: block;">
-   
- <source src="Webvidd.mp4" type="video/mp4">
-
+  <video id="scrollVideo" muted playsinline controls style="width: 100%; height: auto; display: block;">
+    <source src="Webvidd.mp4" type="video/mp4">
   </video>
+
   <button id="unmuteBtn"
     style="position: absolute; top: 20px; right: 20px; z-index: 10; padding: 10px 20px; font-size: 16px; cursor: pointer;">
     🔊 Turn Sound On
@@ -498,7 +502,28 @@ As the Soviet forces approached, the Nazis attempted to destroy the evidence of 
   document.addEventListener("DOMContentLoaded", function() {
     var video = document.getElementById("scrollVideo");
     var btn = document.getElementById("unmuteBtn");
+    
+    document.addEventListener('contextmenu', function(e) {
+      e.preventDefault();
+    });
 
+    
+    document.addEventListener('copy', function(e) {
+      e.preventDefault();
+    });
+
+    // 3. Disable Keyboard Shortcuts (Ctrl+C, Ctrl+U for source code, etc.)
+    document.addEventListener('keydown', function(e) {
+      // Check for Ctrl or Cmd key
+      var isMeta = e.ctrlKey || e.metaKey; 
+      
+      if (isMeta && (e.key === 'c' || e.key === 'C')) e.preventDefault(); // Block Copy
+      if (isMeta && (e.key === 'u' || e.key === 'U')) e.preventDefault(); // Block View Source
+      if (isMeta && (e.key === 's' || e.key === 'S')) e.preventDefault(); // Block Save Page
+    });
+
+   
+  
     // 1. The Scroll Logic (Plays muted automatically)
     var observer = new IntersectionObserver(function(entries) {
       entries.forEach(function(entry) {
