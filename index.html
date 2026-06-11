@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -168,7 +169,7 @@ body {
  }
 .auto { 
         
-  width: 60%;           
+  width: 40%;           
   height: auto;         
   display: block;       
   object-fit: cover; 
@@ -193,6 +194,15 @@ height: 640px;
   object-fit: cover; 
   margin: 20px auto; 
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+.auto4 { 
+        
+  width: 30%;           
+  height: auto;         
+  display: block;       
+  object-fit: cover; 
+  margin: 20px auto; 
+ 
 }
 
 .container {
@@ -353,9 +363,12 @@ font-weight: normal;
   visibility: hidden;
   opacity: 0;
 }
-</style></head>
+</style>
+<link rel="icon" type="image/png" href="/website-icon.PNG">
+
+</head>
 <body>
-<title>Genesis</title>
+<title>holocaust-genesis</title>
 <div class="shape"></div>
 <center>
 <img src="liberation.jpg" class="top-fade-img" alt="Liberation background">
@@ -424,13 +437,18 @@ In the gas chambers of Birkenau, the Nazis used Zyklon B—a highly lethal, cyan
 <p>At the Auschwitz selection ramp, Dr. Josef Mengele—known as the "Angel of Death"—would decide the fate of arriving Jews. With a simple gesture, he sent most to immediate death in the gas chambers and others to forced labor. Mengele also selected specific individuals for cruel pseudo-medical experiments, violating every ethical principle of medicine. </p>
 <img src="selection.png" class="auto">
 <p class="sidetext">The selection ramp at Auschwitz-Birkenau.</p>
-<div style="position: relative; width: 960px; margin: 0 auto; box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);">
-  <video id="scrollVideo" width="960" height="540" muted playsinline style="display: block;">
-    <source src="Webvidd.mp4" type="video/mp4">
+<div style="position: relative; width: 100%; max-width: 960px; margin: 0 auto; aspect-ratio: 16 / 9; box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);">
+  
+  <video id="scrollVideo" muted playsinline
+    style="width: 100%; height: 100%; object-fit: contain; display: block;">
+    <source src="webvidd.mp4" type="video/mp4">
   </video>
-  <button id="unmuteBtn" style="position: absolute; top: 20px; right: 20px; z-index: 10; padding: 10px 20px; font-size: 16px; cursor: pointer;">
+
+  <button id="unmuteBtn"
+    style="position: absolute; top: 20px; right: 20px; z-index: 10; padding: 10px 20px; font-size: 16px; cursor: pointer;">
     🔊 Turn Sound On
   </button>
+
 </div>
 <p class="sidetext">Israeli singer Noa Kirel visits Auschwitz, where members of her family were murdered. The video discusses the cold bureaucracy of the selection process.</p>
 <p> Mengele focused his "research" on twins and people with physical abnormalities, including both adults and children. </p>
@@ -473,6 +491,7 @@ As the Soviet forces approached, the Nazis attempted to destroy the evidence of 
 
 
 <br>
+<img src="/main logo.png" class="auto4"> 
 </center>
 
 <script>
